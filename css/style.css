@@ -1,0 +1,77 @@
+:root{
+    --warna1: #C2DEDC;
+    --warna2: #ECE5C7;
+    --warna3: #CDC2AE;
+    --warna4:  #116A7B;
+    --black: #333;
+    --white: #f8f8f8;
+}
+
+*{
+    box-sizing: border-box;
+}
+.judul{
+    color: var(--black);
+    margin-bottom: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--warna2);
+}
+.btn{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--warna4);
+    box-shadow: 1 1 1 1 #333;
+    color: white;
+    cursor: pointer;
+}
+.d-none{
+    display: none;
+}
+.kalkulator, .kalkulator_suhu, .suhu_1,.suhu_2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.diskripsi, .penjelasan{
+    width: 80%;
+    max-width: 600px;
+    text-align: justify;
+}
+.kalkulator, .kalkulator_suhu{
+    justify-content: center;
+    align-items: center;    
+}
+.kalkulator_suhu{
+    align-items: flex-start;   
+}
+.error{
+    color: rgba(243, 53, 53);
+}
+.kalkulator_suhu{
+    width: 100%;
+}
+.kalkulator,.suhu_1,.suhu_2{
+    flex-flow: column;
+}
+.suhu_1,.suhu_2{
+    flex: 1 1 100%;
+    max-width: 360px;
+}
+#suhu_1_nilai{
+    padding: 10px;
+}
+.suhu_2{
+    min-width: 360px;
+    min-height: 110px;
+    background-color: var(--warna1);
+    padding: 10px;
+}
+select{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: var(--warna1);
+}

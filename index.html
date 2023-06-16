@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="kalkulator">
+        <h1 class="judul">Kalkulator Suhu</h1>
+        <div class="diskripsi">
+            <p>Masukkan suhu derajat (C) ke kotak dibawah, laluklik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenhit (F)</p>
+        </div>
+        <div class="opsi">
+            <select name="suhu_1" id="suhu_1">
+                <option value="celcius" selected>Celcius</option>
+                <option value="fahrenhit">Fahrenhit</option>
+            </select>
+            <button class="btn" data-fungsi="konversi">Konversi</button>
+            <button class="btn" data-fungsi="reset">Reset</button>
+            <button class="btn" data-fungsi="reverse">Reverse</button>
+            <select name="suhu_2" id="suhu_2">
+                <option value="celcius">Celcius</option>
+                <option value="fahrenhit" selected>Fahrenhit</option>
+            </select>
+        </div>
+        
+        <div class="kalkulator_suhu">
+            <div class="suhu_1">
+                <textarea name="suhu_1_nilai" id="suhu_1_nilai" cols="30" rows="5"></textarea>
+                <div class="error"></div>
+            </div>
+            <div class="suhu_2">                
+                <!-- <textarea name="suhu_2_nilai" id="" cols="30" rows="5"></textarea> -->
+            </div>
+        </div>
+        <div class="hasil"></div>        
+        <div class="penjelasan">
+            <h3>Cara Konversi Dari Celsius (&deg;C) ke Fahrenhit (&deg;F)</h3>
+            <hr>
+            <p>Suhu S dalam derajat Fahrenhit (&deg;F) sama dengan suhu S dalam derajat Celsius(&deg;C) kali 9/5 tambah 32</p>
+            <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 9/5) + 32</p>
+            <p>atau</p>
+            <p>S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> x 1.8) + 32</p>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -11,19 +11,34 @@ btns.forEach(btn => {
         suhu2.innerHTML = "";
         error.innerHTML = "";
         hasil.innerHTML = "";
-        if(Number(nilai_awal.value) > 0){
-            let p = document.createElement("p");
-            let span = document.createElement("span");
-            span.innerHTML = `${Number(nilai_awal.value) * 9/5 +32} &deg;Fahrenhit`;
-            p.innerHTML = `Cara Kalkulasi:<br> ${Number(nilai_awal.value)}&deg;C x 9/5 + 32 = ${Number(nilai_awal.value) * 9/5 +32}&deg;F`;
-
-            suhu2.append(span);
-            hasil.append(p);
-        }else{
-            let span = document.createElement("span");
-            span.innerText = `*masukkan angka`;
-            error.append(span);
+        switch(btn.dataset.fungsi){
+            case "konversi":
+                konversi()
+            break
+            case "reset":
+                nilai_awal.value = "";
+            break
+            case "reverse":
+                console.log(btn.dataset.fungsi)
+            break
         }
-        // console.log(suhu2)
+        
+        // console.log(btn.dataset.fungsi)
     })
 });
+
+function konversi(){
+    if(Number(nilai_awal.value) > 0){
+        let p = document.createElement("p");
+        let span = document.createElement("span");
+        span.innerHTML = `${Number(nilai_awal.value) * 9/5 +32} &deg;Fahrenhit`;
+        p.innerHTML = `Cara Kalkulasi:<br> ${Number(nilai_awal.value)}&deg;C x 9/5 + 32 = ${Number(nilai_awal.value) * 9/5 +32}&deg;F`;
+
+        suhu2.append(span);
+        hasil.append(p);
+    }else{
+        let span = document.createElement("span");
+        span.innerText = `*masukkan angka`;
+        error.append(span);
+    }
+}

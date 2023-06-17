@@ -27,6 +27,12 @@ btns.forEach(btn => {
     })
 });
 
+selected.forEach(select=>{
+    select.addEventListener("change",()=>{
+        reset();
+    })
+})
+
 // kosongkan hasil 
 function hapus(){
     suhu2.innerHTML = "";

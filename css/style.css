@@ -19,6 +19,7 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: var(--warna2);
+    overflow-x: hidden;
 }
 select{
     padding: 3px;

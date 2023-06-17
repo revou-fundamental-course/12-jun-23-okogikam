@@ -136,6 +136,21 @@ window.addEventListener("keydown",(key)=>{
         konversi()
     }
 })
+nilai_awal.addEventListener("keypress",(key)=>{
+    if(key.code == "Enter"){
+        hapus();
+        key.preventDefault()
+        konversi()
+    }if(key.code == "sent!"){
+        hapus();
+        key.preventDefault()
+        konversi()
+    }if(key.which == 13){
+        hapus();
+        key.preventDefault()
+        konversi()
+    }
+})
 // variabel daftar rumus 
 const daftar_rumus= {
     "Fahrenheit": [

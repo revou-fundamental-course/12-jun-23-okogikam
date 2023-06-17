@@ -130,6 +130,10 @@ window.addEventListener("keydown",(key)=>{
         hapus();
         key.preventDefault()
         konversi()
+    }if(key.which == 13){
+        hapus();
+        key.preventDefault()
+        konversi()
     }
 })
 // variabel daftar rumus 

@@ -136,7 +136,7 @@ window.addEventListener("keydown",(key)=>{
         konversi()
     }
 })
-nilai_awal.addEventListener("keypress",(key)=>{
+nilai_awal.addEventListener("keydown",(key)=>{
     if(key.code == "Enter"){
         hapus();
         key.preventDefault()
@@ -150,6 +150,9 @@ nilai_awal.addEventListener("keypress",(key)=>{
         key.preventDefault()
         konversi()
     }
+    let span = document.createElement("span");
+    span.innerText = `*${key.code} - ${key.which}`;
+    error.append(span);
 })
 // variabel daftar rumus 
 const daftar_rumus= {

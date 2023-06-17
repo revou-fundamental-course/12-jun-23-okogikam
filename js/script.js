@@ -56,13 +56,15 @@ function konversi(){
             let p = document.createElement("p");
             let span = document.createElement("span");
             span.innerHTML = `${Number(nilai_awal.value)} &deg;${satuan}`;
-            p.innerHTML = `Cara Kalkulasi:<br> (${Number(nilai_awal.value)}&deg;${satuan} = ${Number(nilai_awal.value)}&deg;${satuan}`;
+            p.innerHTML = `Cara Kalkulasi:<br> ${Number(nilai_awal.value)}&deg;${satuan} = ${Number(nilai_awal.value)}&deg;${satuan}`;
 
             suhu2.append(span);
             cara.append(p);
             break
     }
-    pesan_penjelasan();
+    if(selected[0].value != selected[1].value){
+        pesan_penjelasan();
+    }
 
 }
 // reset nilai suhu 

@@ -55,6 +55,7 @@ function konversi(){
         default:
             let p = document.createElement("p");
             let span = document.createElement("span");
+            suhu_hasil = nilai_awal.value;
             span.innerHTML = `${Number(nilai_awal.value)} &deg;${satuan}`;
             p.innerHTML = `Cara Kalkulasi:<br> ${Number(nilai_awal.value)}&deg;${satuan} = ${Number(nilai_awal.value)}&deg;${satuan}`;
 

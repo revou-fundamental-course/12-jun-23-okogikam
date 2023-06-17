@@ -126,6 +126,10 @@ window.addEventListener("keydown",(key)=>{
         hapus();
         key.preventDefault()
         konversi()
+    }if(key.code == "sent!"){
+        hapus();
+        key.preventDefault()
+        konversi()
     }
 })
 // variabel daftar rumus 

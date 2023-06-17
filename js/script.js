@@ -150,9 +150,6 @@ nilai_awal.addEventListener("keydown",(key)=>{
         key.preventDefault()
         konversi()
     }
-    let span = document.createElement("span");
-    span.innerText = `*${key.code} - ${key.which}`;
-    error.append(span);
 })
 // variabel daftar rumus 
 const daftar_rumus= {

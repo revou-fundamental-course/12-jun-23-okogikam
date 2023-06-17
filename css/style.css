@@ -1,3 +1,4 @@
+/* global style  */
 :root{
     --warna1: #C2DEDC;
     --warna2: #ECE5C7;
@@ -19,6 +20,11 @@ body{
     padding: 0px;
     background-color: var(--warna2);
 }
+select{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: var(--warna1);
+}
 .btn{
     padding: 5px;
     border: none;
@@ -31,16 +37,17 @@ body{
 .d-none{
     display: none;
 }
+
+/* style Layout kalkulator  */
 .kalkulator, .kalkulator_suhu, .suhu_1,.suhu_2{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-.diskripsi, .penjelasan{
-    width: 80%;
-    max-width: 600px;
-    text-align: justify;
+.kalkulator{
+    padding-bottom: 30px;
 }
+
 .kalkulator, .kalkulator_suhu{
     justify-content: center;
     align-items: center;    
@@ -48,9 +55,7 @@ body{
 .kalkulator_suhu{
     align-items: flex-start;   
 }
-.error{
-    color: rgba(243, 53, 53);
-}
+
 .kalkulator_suhu{
     width: 100%;
 }
@@ -70,8 +75,15 @@ body{
     background-color: var(--warna1);
     padding: 10px;
 }
-select{
-    padding: 3px;
-    border-radius: 5px;
-    background-color: var(--warna1);
+/* style output  */
+.error{
+    color: rgba(243, 53, 53);
+}
+.cara{
+    text-align: center;
+}
+.diskripsi, .penjelasan{
+    width: 80%;
+    max-width: 600px;
+    text-align: justify;
 }

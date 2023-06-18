@@ -26,10 +26,11 @@ btns.forEach(btn => {
         }
     })
 });
-
+// menambah fungsi untuk tombol selection 
 selected.forEach(select=>{
     select.addEventListener("change",()=>{
         reset();
+        nilai_awal.setAttribute("placeholder",selected[0].value)
     })
 })
 
@@ -79,7 +80,7 @@ function reset(){
     nilai_awal.value = "";
     hapus();
 }
-// balik rumus konversi 
+// membalik rumus konversi 
 function reverse(){
     let s = selected[0].value;
     selected[0].value = selected[1].value;
@@ -120,7 +121,7 @@ function Fahrenheit_Celsius(){
 // menampilkan penjelasan
 function pesan_penjelasan(){
     let div = document.createElement("div");
-    div.innerHTML = `<h3>Cara Konversi Dari ${selected[0].value} (&deg;${selected[0].value[0]} ) ke ${selected[1].value}  (&deg;${selected[0].value[0]} )</h3>
+    div.innerHTML = `<h3>Cara Konversi Dari ${selected[0].value} (&deg;${selected[0].value[0]} ) ke ${selected[1].value}  (&deg;${selected[1].value[0]} )</h3>
     <hr>
     <p>${daftar_rumus[selected[1].value][0]}</p>
     <p>${daftar_rumus[selected[1].value][1]}</p>

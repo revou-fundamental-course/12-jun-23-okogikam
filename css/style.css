@@ -6,10 +6,13 @@
     --warna4:  #116A7B;
     --black: #333;
     --white: #f8f8f8;
+    --shadow: -2px -2px 7px 1px #ECE5C7;
+    --shadow2: 2px 2px 7px 1px #969494;
 }
 
 *{
     box-sizing: border-box;
+    color: var(--black);
 }
 .judul{
     color: var(--black);
@@ -25,6 +28,10 @@ select{
     padding: 3px;
     border-radius: 5px;
     background-color: var(--warna1);
+}
+textarea{
+    border: none;
+    box-shadow: var(--shadow), var(--shadow2);
 }
 .btn{
     padding: 5px;
@@ -75,6 +82,7 @@ select{
     min-height: 110px;
     background-color: var(--warna1);
     padding: 10px;
+    box-shadow: var(--shadow), var(--shadow2);
 }
 /* style output  */
 .error{

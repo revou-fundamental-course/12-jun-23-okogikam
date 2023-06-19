@@ -55,6 +55,9 @@ textarea{
 .kalkulator{
     padding-bottom: 30px;
 }
+#suhu_1{
+    background-color: var(--white);
+}
 
 .kalkulator, .kalkulator_suhu{
     justify-content: center;
@@ -85,7 +88,7 @@ textarea{
     box-shadow: var(--shadow), var(--shadow2);
 }
 /* style output  */
-.error{
+.error span{
     color: rgba(243, 53, 53);
 }
 .cara{

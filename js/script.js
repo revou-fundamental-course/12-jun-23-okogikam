@@ -64,7 +64,8 @@ function konversi(){
             let span = document.createElement("span");
             suhu_hasil = nilai_awal.value;
             span.innerHTML = `${Number(nilai_awal.value)} &deg;${satuan}`;
-            p.innerHTML = `Cara Kalkulasi:<br> ${Number(nilai_awal.value)}&deg;${satuan} = ${Number(nilai_awal.value)}&deg;${satuan}`;
+            p.innerHTML = `Cara Kalkulasi:<br> ${Number(nilai_awal.value)}&deg;${satuan} = 
+            ${Number(nilai_awal.value)}&deg;${satuan}`;
 
             suhu2.append(span);
             cara.append(p);
@@ -102,7 +103,8 @@ function Celsius_Fahrenheit(){
     let span = document.createElement("span");
     suhu_hasil = (Number(nilai_awal.value) * 9/5 +32).toFixed(2);
     span.innerHTML = `${suhu_hasil} &deg;F`;
-    p.innerHTML = `Cara Kalkulasi:<br> ${Number(nilai_awal.value)} &deg;C x 9/5 + 32 = ${suhu_hasil} &deg;F`;
+    p.innerHTML = `Cara Kalkulasi:<br> ${Number(nilai_awal.value)} &deg;C x 9/5 + 32 = 
+    ${suhu_hasil} &deg;F`;
 
     suhu2.append(span);
     cara.append(p);
@@ -113,7 +115,8 @@ function Fahrenheit_Celsius(){
     let span = document.createElement("span");
     suhu_hasil = ((Number(nilai_awal.value) - 32) * 5/9).toFixed(2) ;
     span.innerHTML = `${suhu_hasil} &deg;C`;
-    p.innerHTML = `Cara Kalkulasi:<br> (${Number(nilai_awal.value)} &deg;F - 32) x 5/9 = ${suhu_hasil} &deg;C`;
+    p.innerHTML = `Cara Kalkulasi:<br> (${Number(nilai_awal.value)} &deg;F - 32) x 5/9 = 
+    ${suhu_hasil} &deg;C`;
 
     suhu2.append(span);
     cara.append(p);
@@ -121,7 +124,8 @@ function Fahrenheit_Celsius(){
 // menampilkan penjelasan
 function pesan_penjelasan(){
     let div = document.createElement("div");
-    div.innerHTML = `<h3>Cara Konversi Dari ${selected[0].value} (&deg;${selected[0].value[0]} ) ke ${selected[1].value}  (&deg;${selected[1].value[0]} )</h3>
+    div.innerHTML = `<h3>Cara Konversi Dari ${selected[0].value} (&deg;${selected[0].value[0]} ) 
+    ke ${selected[1].value}  (&deg;${selected[1].value[0]} )</h3>
     <hr>
     <p>${daftar_rumus[selected[1].value][0]}</p>
     <p>${daftar_rumus[selected[1].value][1]}</p>
